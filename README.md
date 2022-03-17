@@ -1,1 +1,1 @@
-# script.gg
+# We Make Hack For Roblox
