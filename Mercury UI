@@ -904,8 +904,8 @@ function Library:create(options)
 	settingsTab:slider{
 		Name = "UI Drag Speed",
 		Description = "How smooth the dragging looks.",
-		Max = 20,
-		Default = 14,
+		Max = 70,
+		Default = 30,
 		Callback = function(value)
 			Library.DragSpeed = (20 - value)/100
 		end,
