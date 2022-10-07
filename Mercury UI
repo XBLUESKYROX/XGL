@@ -658,7 +658,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 5, 1, -6),
 		Size = UDim2.new(0.2, 0, 0, 10),
 		Font = Enum.Font.SourceSans,
-		Text = "Light Hub | Premium",
+		Text = "Status | Idle",
 		Theme = {TextColor3 = "Tertiary"},
 		TextSize = 14,
 		TextXAlignment = Enum.TextXAlignment.Left
@@ -885,7 +885,7 @@ function Library:create(options)
 	settingsTab:keybind{
 		Name = "Toggle Key",
 		Description = "Key to show/hide the UI.",
-		Keybind = Enum.KeyCode.rightcontrol,
+		Keybind = Enum.KeyCode.Delete,
 		Callback = function()
 			self.Toggled = not self.Toggled
 			Library:show(self.Toggled)
@@ -904,8 +904,8 @@ function Library:create(options)
 	settingsTab:slider{
 		Name = "UI Drag Speed",
 		Description = "How smooth the dragging looks.",
-		Max = 100,
-		Default = 34,
+		Max = 20,
+		Default = 14,
 		Callback = function(value)
 			Library.DragSpeed = (20 - value)/100
 		end,
@@ -921,7 +921,7 @@ function Library:create(options)
 
 	creditsTab:credit{Name = "Abstract", Description = "UI Library Developer", Discord = "Abstract#8007", V3rmillion = "AbstractPoo"}
 	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
-  creditsTab:credit{Name = "Deity", Description = "Light Hub Developer", Discord = "Kosin.K#2177", V3rmillion = "AlphaBlue2d"}
+	creditsTab:credit{Name = "Deity", Description = "Light Hub Developer", Discord = "Kosin.K#2177", V3rmillion = "AlphaBlue2d"}
 
 	return mt
 end
